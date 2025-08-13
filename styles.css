@@ -178,6 +178,56 @@ h1 {
     border: 1px solid rgba(59, 130, 246, 0.3);
 }
 
+/* Accordion (SSS) */
+.accordion {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.accordion-item {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    border-radius: 10px;
+}
+
+.accordion-header {
+    width: 100%;
+    text-align: left;
+    background: transparent;
+    color: #3b82f6;
+    padding: 14px 16px;
+    font-size: 1rem;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.accordion-header:hover {
+    background: rgba(59, 130, 246, 0.05);
+}
+
+.accordion-content {
+    display: none;
+    padding: 0 16px 16px 16px;
+    color: #ccc;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.accordion-item.active .accordion-content {
+    display: block;
+}
+
+.accordion-icon {
+    transition: transform 0.2s ease;
+}
+
+.accordion-item.active .accordion-icon {
+    transform: rotate(180deg);
+}
+
 .projects-grid {
     display: grid;
     gap: 20px;
@@ -246,8 +296,7 @@ h1 {
 /* Alt Bölüm */
 .footer {
     text-align: center;
-    padding: 30px 0;
-    border-top: 1px solid rgba(59, 130, 246, 0.3);
+    padding-top: 15px;
     color: #666;
     font-size: 0.9rem;
     margin-top: 40px;
@@ -300,4 +349,35 @@ h1 {
 .projects-section:hover {
     border-color: rgba(59, 130, 246, 0.5);
     box-shadow: 0 10px 30px rgba(59, 130, 246, 0.15);
+}
+
+/* Accordion spacing tweaks */
+.accordion {
+    display: grid;
+    gap: 10px;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+}
+
+.accordion-header {
+    padding: 16px 18px;
+}
+
+.accordion-content {
+    padding: 12px 18px 18px 18px;
+}
+
+.accordion-content p {
+    margin: 8px 0 12px 0;
+}
+
+.accordion-content ul {
+    margin: 0 0 10px 0;
+    padding-left: 18px;
+}
+
+.accordion-content li {
+    margin: 6px 0;
 }

@@ -128,8 +128,26 @@
                 "@type": "Offer",
                 "itemOffered": {
                     "@type": "Service",
-                    "name": "ERP & CRM Entegrasyonu",
-                    "serviceType": "Logo, Netsis, .NET Core",
+                    "name": "ERP & CRM Sistemleri",
+                    "serviceType": "C#, .NET Core, SQL Server, Entity Framework",
+                    "areaServed": "TR"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Muhasebe Programları Entegrasyonu",
+                    "serviceType": "Logo, Netsis, e-Fatura/e-Arşiv/e-İrsaliye",
+                    "areaServed": "TR"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Pazaryeri Entegrasyonu",
+                    "serviceType": "Trendyol, Hepsiburada, N11 sipariş/stok/ürün",
                     "areaServed": "TR"
                 }
             },
@@ -138,7 +156,7 @@
                 "itemOffered": {
                     "@type": "Service",
                     "name": "E-Ticaret Çözümleri",
-                    "serviceType": "B2B/B2C, Stripe, SEO",
+                    "serviceType": "B2B/B2C, Stripe ödeme, çoklu dil",
                     "areaServed": "TR"
                 }
             },
@@ -146,8 +164,26 @@
                 "@type": "Offer",
                 "itemOffered": {
                     "@type": "Service",
-                    "name": "API Geliştirme ve Entegrasyon",
-                    "serviceType": "REST, GraphQL, Webhook",
+                    "name": "Web Uygulama Geliştirme",
+                    "serviceType": "React.js, SEO uyumlu, performans odaklı",
+                    "areaServed": "TR"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Uçtan Uca API Entegrasyonu",
+                    "serviceType": "REST/GraphQL, JWT, mikroservis",
+                    "areaServed": "TR"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Sistem Entegrasyonu",
+                    "serviceType": "Webhook, message queue, real-time",
                     "areaServed": "TR"
                 }
             }
@@ -183,44 +219,16 @@
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "Mobil uygulama geliştirme ne kadar sürer ve maliyeti nedir?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "React Native ile iOS ve Android için mobil uygulama geliştirme süresi kapsam ve özelliklere göre 4-12 hafta aralığındadır. İstanbul ve Türkiye genelinde freelance Full Stack Developer olarak sabit fiyat veya sprint bazlı teklifler sunuyorum."
-                }
+                "name": "Mobil uygulama geliştirme kapsamında neler var?",
+                "acceptedAnswer": {"@type": "Answer","text": "Keşif ve kullanıcı akışları, React Native ile iOS/Android geliştirme, test ve mağaza yayını, push bildirim ve offline destek, analitik ve hata izleme dahildir."}
             },
-            {
-                "@type": "Question",
-                "name": "ERP/CRM entegrasyonu hangi teknolojilerle yapılır?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "C#, .NET Core, SQL Server ve Entity Framework Core kullanıyorum. Logo ve Netsis gibi muhasebe programlarıyla REST API üzerinden güvenli veri senkronizasyonu yapıyorum."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "E-ticaret projesinde SEO ve hız optimizasyonu yapıyor musunuz?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Evet. React.js ile Core Web Vitals odaklı performans, şema işaretlemeleri (Schema.org), teknik SEO, site haritası ve yapılandırılmış veri optimizasyonları uygularım. Stripe ve pazaryeri entegrasyonlarıyla B2B/B2C çözümleri sunarım."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "API entegrasyonu nedir ve nasıl ilerler?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "REST veya GraphQL API tasarlanır, kimlik doğrulama (JWT), rate limit ve webhook süreçleri kurulur. Mikroservis mimarisi gerekiyorsa ölçeklenebilir şekilde planlanır."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Google'da üst sıralar için hangi SEO çalışmaları yapılır?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Anahtar kelime araştırması, içerik haritası, teknik SEO (schema, hreflang, canonical), sayfa hızı iyileştirmeleri ve yerel SEO odaklı içerik üretimi yapılır. Düzenli içerik güncellemesi ve bağlantı otoritesi de önemlidir."
-                }
-            }
+            {"@type": "Question","name": "ERP & CRM projelerinde hangi modüller sağlanır?","acceptedAnswer": {"@type": "Answer","text": "Müşteri, satış, stok, yetkilendirme ve raporlama modülleri .NET Core, C# ve SQL Server ile kurulur; mevcut veriler güvenle taşınır."}},
+            {"@type": "Question","name": "Logo/Netsis entegrasyonunda hangi e-belge süreçleri desteklenir?","acceptedAnswer": {"@type": "Answer","text": "e-Fatura, e-Arşiv, e-İrsaliye ve e-SMM akışları tek/çift yönlü senkronize edilir; loglama ve hata yönetimi uygulanır."}},
+            {"@type": "Question","name": "Pazaryeri entegrasyonunda akışlar nasıl çalışır?","acceptedAnswer": {"@type": "Answer","text": "Ürün, fiyat, stok ve sipariş senkronu kuruludur; webhook ve otomatik yeniden deneme ile kesintisiz akış sağlanır."}},
+            {"@type": "Question","name": "E-ticaret çözümlerinde hangi özellikler sunuluyor?","acceptedAnswer": {"@type": "Answer","text": "B2B/B2C altyapı, Stripe ödeme, çoklu dil/para, kupon/sepet ve SEO uyumlu, ölçeklenebilir mimari sağlanır."}},
+            {"@type": "Question","name": "Web uygulamalarında hız ve SEO nasıl optimize edilir?","acceptedAnswer": {"@type": "Answer","text": "Lazy loading, kod bölme, önbellekleme; Schema.org, hreflang, canonical ve erişilebilirlik (ARIA) uygulanır."}},
+            {"@type": "Question","name": "API entegrasyonlarında güvenlik ve ölçeklenebilirlik nasıl sağlanır?","acceptedAnswer": {"@type": "Answer","text": "JWT/OAuth2, hız limitleri, versiyonlama, merkezi loglama/izleme ve mesaj kuyruğu ile güvenli, ölçeklenebilir mimari kurulur."}},
+            {"@type": "Question","name": "Gerçek zamanlı sistem entegrasyonu neleri kapsar?","acceptedAnswer": {"@type": "Answer","text": "Webhook ve message queue ile olay tabanlı akış; idempotency, retry ve monitoring ile dayanıklılık sağlanır."}}
         ]
     }
     </script>
@@ -259,7 +267,7 @@
                                 <i class="bi bi-phone-fill" aria-hidden="true"></i>
                             </div>
                             <div class="contact-label">Telefon</div>
-                            <div class="contact-value">+90 555 123 4567</div>
+                            <div class="contact-value">+90 551 943 0808</div>
                         </a>
                     </div>
 
@@ -292,7 +300,7 @@
         <main class="projects-section" role="main">
             <h2 class="section-title">Hizmetler</h2>
             <div class="projects-grid">
-                <article class="project-card">
+                <article class="project-card" id="mobil-uygulama">
                     <h3 class="project-title">Mobil Uygulama Geliştirme</h3>
                     <p class="project-description">
                         iOS ve Android platformları için native ve cross-platform mobil uygulamalar.
@@ -306,7 +314,7 @@
                     </div>
                 </article>
 
-                <article class="project-card">
+                <article class="project-card" id="erp-crm">
                     <h3 class="project-title">ERP & CRM Sistemleri</h3>
                     <p class="project-description">
                         İşletmeler için özelleştirilmiş ERP ve CRM çözümleri.
@@ -320,7 +328,7 @@
                     </div>
                 </article>
 
-                <article class="project-card">
+                <article class="project-card" id="muhasebe-entegrasyon">
                     <h3 class="project-title">Muhasebe Programları Entegrasyonu</h3>
                     <p class="project-description">
                         Logo, Netsis gibi muhasebe programlarına API entegrasyonu.
@@ -334,7 +342,7 @@
                     </div>
                 </article>
 
-                <article class="project-card">
+                <article class="project-card" id="pazaryeri-entegrasyon">
                     <h3 class="project-title">Pazaryeri Entegrasyonu</h3>
                     <p class="project-description">
                         Trendyol, Hepsiburada, N11 gibi pazaryerlerine API entegrasyonu.
@@ -348,7 +356,7 @@
                     </div>
                 </article>
 
-                <article class="project-card">
+                <article class="project-card" id="e-ticaret">
                     <h3 class="project-title">E-Ticaret Çözümleri</h3>
                     <p class="project-description">
                         B2B ve B2C e-ticaret platformları. Ödeme sistemi entegrasyonu,
@@ -362,7 +370,7 @@
                     </div>
                 </article>
 
-                <article class="project-card">
+                <article class="project-card" id="web-uygulama">
                     <h3 class="project-title">Web Uygulama Geliştirme</h3>
                     <p class="project-description">
                         Modern web teknolojileri ile responsive ve performanslı web uygulamaları.
@@ -376,7 +384,7 @@
                     </div>
                 </article>
 
-                <article class="project-card">
+                <article class="project-card" id="api-entegrasyon">
                     <h3 class="project-title">Uçtan Uca API Entegrasyonu</h3>
                     <p class="project-description">
                         RESTful ve GraphQL API geliştirme, mikroservis mimarisi ve sistem entegrasyonu.
@@ -390,7 +398,7 @@
                     </div>
                 </article>
 
-                <article class="project-card">
+                <article class="project-card" id="sistem-entegrasyon">
                     <h3 class="project-title">Sistem Entegrasyonu</h3>
                     <p class="project-description">
                         Farklı sistemler arası veri senkronizasyonu ve otomasyon.
@@ -409,30 +417,129 @@
         <!-- SSS Bölümü (SEO için içerik zenginleştirme) -->
         <section class="projects-section" aria-labelledby="sss-baslik" style="margin-top: 25px;">
             <h2 id="sss-baslik" class="section-title">Sıkça Sorulan Sorular (SSS)</h2>
-            <div class="projects-grid">
-                <article class="project-card">
-                    <h3 class="project-title">Mobil uygulama geliştirme süresi ve maliyeti nedir?</h3>
-                    <p class="project-description">Proje kapsamına göre 4-12 hafta arasında değişir. Net teklif için
-                        gereksinimlerin paylaşılması gerekir.</p>
-                </article>
-                <article class="project-card">
-                    <h3 class="project-title">Hangi pazaryeri entegrasyonlarını yapıyorsunuz?</h3>
-                    <p class="project-description">Trendyol, Hepsiburada, N11 başta olmak üzere REST API ile ürün, stok
-                        ve
-                        sipariş senkronizasyonu yapılır.</p>
-                </article>
-                <article class="project-card">
-                    <h3 class="project-title">SEO ve performans optimizasyonu sağlıyor musunuz?</h3>
-                    <p class="project-description">Schema.org işaretleme, hreflang, canonical, resim optimizasyonu ve
-                        Core
-                        Web Vitals odaklı geliştirme uygulanır.</p>
-                </article>
-                <article class="project-card">
-                    <h3 class="project-title">.NET Core ile ERP/CRM entegrasyonu nasıl ilerler?</h3>
-                    <p class="project-description">Analiz, API tasarımı, güvenlik (JWT), veri eşleştirme, pilot ve
-                        canlıya
-                        geçiş aşamalarıyla ilerler.</p>
-                </article>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span>Mobil uygulama geliştirme kapsamında neler var?</span>
+                        <i class="bi bi-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Keşif, kullanıcı akışları ve ekran taslakları; React Native ile iOS/Android geliştirme; test
+                            ve mağaza yayını (App Store/Google Play) desteği; push bildirim, offline senaryolar,
+                            analitik ve hata izleme dahildir. Ortalama süre 4-12 haftadır.</p>
+                        <ul>
+                            <li>Push bildirim (FCM/APNS) ve derin link</li>
+                            <li>Offline cache ve yeniden deneme</li>
+                            <li>Crash ve analitik entegrasyonu</li>
+                            <li>CI ile test ve sürümleme</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span>ERP & CRM projelerinde hangi modüller sağlanır?</span>
+                        <i class="bi bi-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Müşteri, satış, stok, yetkilendirme ve raporlama modülleri .NET Core, C# ve SQL Server ile
+                            kurulur; Entity Framework ile güvenli veri modeli oluşturulur.</p>
+                        <ul>
+                            <li>Rol tabanlı yetkilendirme</li>
+                            <li>Excel/SQL veri migrasyonu</li>
+                            <li>Özel raporlar ve dashboard</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span>Logo/Netsis entegrasyonunda hangi e-belgeler destekleniyor?</span>
+                        <i class="bi bi-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>e-Fatura, e-Arşiv, e-İrsaliye, e-SMM akışları tek/çift yönlü senkronize edilir; hata yönetimi
+                            ve loglama ile güvenli entegrasyon sağlanır.</p>
+                        <ul>
+                            <li>Veri eşleştirme ve doğrulama</li>
+                            <li>İkili yönlü senkronizasyon</li>
+                            <li>Hata loglama ve uyarılar</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span>Pazaryeri entegrasyonunda akışlar nasıl çalışır?</span>
+                        <i class="bi bi-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Trendyol, Hepsiburada, N11 için ürün, fiyat, stok ve sipariş akışları webhook ve otomatik
+                            yeniden deneme ile kesintisiz işler.</p>
+                        <ul>
+                            <li>Ürün/fiyat/stok senkronu</li>
+                            <li>Sipariş ve iade yönetimi</li>
+                            <li>Hata yönetimi ve retry stratejileri</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span>E-ticaret çözümlerinde hangi özellikler var?</span>
+                        <i class="bi bi-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>B2B/B2C altyapı, Stripe ödeme, çoklu dil/para, kupon/sepet ve SEO uyumlu, hızlı ve
+                            ölçeklenebilir mimari.</p>
+                        <ul>
+                            <li>Çoklu dil ve çoklu para birimi</li>
+                            <li>Kupon, kampanya, sepet kuralları</li>
+                            <li>Core Web Vitals odaklı hız</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span>Web uygulamalarında performans ve SEO nasıl sağlanır?</span>
+                        <i class="bi bi-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Lazy loading, kod bölme, önbellekleme; Schema.org ve erişilebilirlik (ARIA) ile güçlü teknik
+                            SEO uygulanır.</p>
+                        <ul>
+                            <li>Önbellek ve CDN stratejileri</li>
+                            <li>Schema, hreflang, canonical</li>
+                            <li>Erişilebilirlik ve semantik HTML</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span>API entegrasyonlarında güvenlik mimariniz nedir?</span>
+                        <i class="bi bi-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>JWT/OAuth2, hız limitleri, sürümleme, merkezi izleme ve loglama ile güvenli/ölçeklenebilir
+                            API'ler geliştirilir.</p>
+                        <ul>
+                            <li>JWT, OAuth2, anahtar yönetimi</li>
+                            <li>Rate limit ve throttling</li>
+                            <li>Versiyonlama ve sözleşme testleri</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span>Gerçek zamanlı sistem entegrasyonu neleri kapsar?</span>
+                        <i class="bi bi-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Webhook ve message queue ile olay tabanlı akış; idempotency, retry ve monitoring ile
+                            dayanıklılık sağlanır.</p>
+                        <ul>
+                            <li>Webhook imzalama ve doğrulama</li>
+                            <li>Mesaj kuyruğu ve tekrar deneme</li>
+                            <li>Alarm ve merkezi izleme</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -464,6 +571,17 @@
 
                 images.forEach(img => imageObserver.observe(img));
             }
+        });
+    </script>
+    <script>
+        // Accordion aç/kapa
+        document.addEventListener('click', function (e) {
+            const header = e.target.closest('.accordion-header');
+            if (!header) return;
+            const item = header.parentElement;
+            item.classList.toggle('active');
+            const expanded = item.classList.contains('active');
+            header.setAttribute('aria-expanded', expanded ? 'true' : 'false');
         });
     </script>
 </body>
