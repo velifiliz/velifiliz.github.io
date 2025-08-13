@@ -125,6 +125,39 @@ h1 {
     font-size: 0.95rem;
 }
 
+/* Bölüm başlığı sarmalayıcı */
+.section-header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 14px;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.section-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(80% 80% at 30% 20%, rgba(139, 92, 246, .35), rgba(59, 130, 246, .15) 70%, transparent 71%), linear-gradient(180deg, rgba(255, 255, 255, .06), rgba(255, 255, 255, .02));
+    border: 1px solid rgba(99, 102, 241, .35);
+    box-shadow: 0 10px 24px rgba(8, 15, 40, 0.35), 0 0 0 1px rgba(59, 130, 246, .12) inset;
+    color: #c7d2fe;
+}
+
+.section-text {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Bu sarmalayıcı içinde, eski başlık ikonunu gizle */
+.section-header .section-title::before {
+    display: none;
+    content: none;
+}
+
 .contact-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -133,37 +166,47 @@ h1 {
 
 .contact-item {
     text-align: center;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.02);
-    border-radius: 8px;
-    border: 1px solid rgba(59, 130, 246, 0.2);
+    padding: 12px 12px 10px 12px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.015));
+    border-radius: 10px;
+    border: 1px solid rgba(99, 102, 241, 0.25);
     transition: all 0.3s ease;
+    min-height: 92px;
 }
 
 .contact-item:hover {
-    background: rgba(59, 130, 246, 0.1);
-    border-color: rgba(59, 130, 246, 0.5);
+    background: rgba(59, 130, 246, 0.08);
+    border-color: rgba(139, 92, 246, 0.45);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.2);
+    box-shadow: 0 8px 22px rgba(59, 130, 246, 0.18);
 }
 
 .contact-icon {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-    display: block;
-    color: #3b82f6;
+    font-size: 1rem;
+    margin-bottom: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: radial-gradient(80% 80% at 30% 20%, rgba(139, 92, 246, .35), rgba(59, 130, 246, .15) 70%, transparent 71%), linear-gradient(180deg, rgba(255, 255, 255, .06), rgba(255, 255, 255, .02));
+    border: 1px solid rgba(99, 102, 241, .35);
+    box-shadow: 0 8px 18px rgba(8, 15, 40, 0.28), 0 0 0 1px rgba(59, 130, 246, .12) inset;
+    color: #c7d2fe;
 }
 
 .contact-label {
-    color: #3b82f6;
-    font-size: 0.7rem;
-    font-weight: 500;
-    margin-bottom: 2px;
+    color: #c7d2fe;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: .01em;
+    margin-bottom: 4px;
 }
 
 .contact-value {
-    color: #ccc;
-    font-size: 0.65rem;
+    color: #cbd5e1;
+    font-size: 0.8rem;
 }
 
 .contact-link {
@@ -350,6 +393,59 @@ h1 {
     .contact-grid {
         grid-template-columns: 1fr;
         gap: 8px;
+    }
+
+    /* Mobil: başlık daha minimal */
+    .section-header {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .section-icon {
+        width: 30px;
+        height: 30px;
+        box-shadow: none;
+        border: 1px solid rgba(99, 102, 241, .25);
+        background: rgba(255, 255, 255, .04);
+    }
+
+    .section-text {
+        align-items: flex-start;
+    }
+
+    .section-subtitle {
+        display: none;
+    }
+
+    /* Mobil: iletişim kartları daha sade */
+    .contact-section {
+        padding: 16px;
+        border-radius: 12px;
+    }
+
+    .contact-item {
+        padding: 10px 10px 8px 10px;
+        min-height: 70px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.02);
+        box-shadow: none;
+        border: 1px solid rgba(99, 102, 241, 0.2);
+    }
+
+    .contact-icon {
+        width: 30px;
+        height: 30px;
+        font-size: .95rem;
+        margin-bottom: 6px;
+    }
+
+    .contact-label {
+        font-size: 0.7rem;
+        margin-bottom: 2px;
+    }
+
+    .contact-value {
+        font-size: 0.75rem;
     }
 }
 
