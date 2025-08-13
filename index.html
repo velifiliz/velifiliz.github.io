@@ -4,311 +4,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmet Yılmaz - Portfolio</title>
+
+    <!-- SEO Meta Etiketleri -->
+    <title>Veli Filiz - Full Stack Developer | React.js, React Native, C#, .NET Core Uzmanı</title>
+    <meta name="description"
+        content="Veli Filiz - Full Stack Developer. React.js, React Native, C#, .NET Core, SQL uzmanı. Mobil uygulama, ERP/CRM sistemleri, e-ticaret ve API entegrasyonu hizmetleri. İstanbul'da profesyonel yazılım geliştirme.">
+    <meta name="keywords"
+        content="Full Stack Developer, React.js, React Native, C#, .NET Core, SQL, mobil uygulama geliştirme, ERP sistemleri, CRM sistemleri, e-ticaret, API entegrasyonu, yazılım geliştirme, İstanbul, Türkiye">
+    <meta name="author" content="Veli Filiz">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Turkish">
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Open Graph Meta Etiketleri -->
+    <meta property="og:title"
+        content="Veli Filiz - Full Stack Developer | React.js, React Native, C#, .NET Core Uzmanı">
+    <meta property="og:description"
+        content="React.js, React Native, C#, .NET Core ve SQL uzmanı Full Stack Developer. Mobil uygulama, ERP/CRM sistemleri ve e-ticaret çözümleri.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://velifiliz.github.io">
+    <meta property="og:image" content="https://velifiliz.github.io/1709276050820.jpeg">
+    <meta property="og:site_name" content="Veli Filiz - Full Stack Developer">
+    <meta property="og:locale" content="tr_TR">
+
+    <!-- Twitter Card Meta Etiketleri -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Veli Filiz - Full Stack Developer">
+    <meta name="twitter:description"
+        content="React.js, React Native, C#, .NET Core uzmanı. Mobil uygulama ve web geliştirme hizmetleri.">
+    <meta name="twitter:image" content="https://velifiliz.github.io/1709276050820.jpeg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://velifiliz.github.io">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#3b82f6">
+
     <!-- Bootstrap Icons CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #ffffff;
-            background: #000000;
-            min-height: 100vh;
-        }
+    <!-- Structured Data / Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Veli Filiz",
+        "jobTitle": "Full Stack Developer",
+        "description": "React.js, React Native, C#, .NET Core ve SQL uzmanı Full Stack Developer",
+        "url": "https://velifiliz.github.io",
+        "image": "https://velifiliz.github.io/1709276050820.jpeg",
+        "email": "velifiliz@mail.com",
+        "telephone": "+905519430808",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "TR",
+            "addressLocality": "İstanbul"
+        },
+        "sameAs": [
+            "https://linkedin.com/in/velifiliz",
+            "https://github.com/velifiliz"
+        ],
+        "knowsAbout": [
+            "React.js",
+            "React Native", 
+            "C#",
+            ".NET Core",
+            "SQL",
+            "Mobil Uygulama Geliştirme",
+            "ERP Sistemleri",
+            "CRM Sistemleri",
+            "E-ticaret",
+            "API Entegrasyonu"
+        ],
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Freelance Full Stack Developer"
+        },
+        "serviceType": [
+            "Mobil Uygulama Geliştirme",
+            "ERP & CRM Sistemleri", 
+            "E-ticaret Çözümleri",
+            "API Entegrasyonu",
+            "Web Uygulama Geliştirme"
+        ]
+    }
+    </script>
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Full Stack Development Services",
+        "provider": {
+            "@type": "Person",
+            "name": "Veli Filiz"
+        },
+        "description": "React.js, React Native, C#, .NET Core ile mobil uygulama, web uygulama, ERP/CRM sistemleri ve e-ticaret çözümleri geliştirme hizmetleri",
+        "areaServed": "TR",
+        "serviceType": [
+            "Mobil Uygulama Geliştirme",
+            "ERP & CRM Sistemleri",
+            "E-ticaret Çözümleri", 
+            "API Entegrasyonu",
+            "Web Uygulama Geliştirme"
+        ]
+    }
+    </script>
 
-        /* Header Bölümü - Profil ve İletişim Birleşik */
-        .header {
-            margin-bottom: 40px;
-            padding: 40px;
-            background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(37, 99, 235, 0.15));
-            border-radius: 20px;
-            border: 1px solid rgba(59, 130, 246, 0.3);
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            align-items: center;
-        }
-
-        /* Sol taraf - Profil */
-        .profile-section {
-            text-align: center;
-        }
-
-        .profile-img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            border: 4px solid #3b82f6;
-            margin: 0 auto 20px;
-            background-image: url('1709276050820.jpeg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .profile-img::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(45deg, rgba(59, 130, 246, 0.3), rgba(37, 99, 235, 0.3));
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .profile-img:hover::before {
-            opacity: 1;
-        }
-
-        h1 {
-            font-size: 2.8rem;
-            margin-bottom: 10px;
-            color: #3b82f6;
-            font-weight: 300;
-        }
-
-        .subtitle {
-            font-size: 1.2rem;
-            color: #666;
-            margin-bottom: 15px;
-        }
-
-        .skills {
-            color: #3b82f6;
-            font-size: 1rem;
-            opacity: 0.9;
-        }
-
-        /* Sağ taraf - İletişim */
-        .contact-section {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 25px;
-            border-radius: 15px;
-            border: 1px solid rgba(147, 51, 234, 0.2);
-        }
-
-        .section-title {
-            color: #a855f7;
-            font-size: 1.3rem;
-            margin-bottom: 15px;
-            padding-bottom: 8px;
-            border-bottom: 2px solid rgba(147, 51, 234, 0.4);
-            display: flex;
-            align-items: center;
-        }
-
-        .section-title::before {
-            content: '\F4BB';
-            font-family: 'bootstrap-icons';
-            margin-right: 8px;
-            color: #9333ea;
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 12px;
-        }
-
-        .contact-item {
-            text-align: center;
-            padding: 10px;
-            background: rgba(255, 255, 255, 0.02);
-            border-radius: 8px;
-            border: 1px solid rgba(147, 51, 234, 0.2);
-            transition: all 0.3s ease;
-        }
-
-        .contact-item:hover {
-            background: rgba(147, 51, 234, 0.1);
-            border-color: rgba(147, 51, 234, 0.5);
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(147, 51, 234, 0.2);
-        }
-
-        .contact-icon {
-            font-size: 1.2rem;
-            margin-bottom: 5px;
-            display: block;
-            color: #a855f7;
-        }
-
-        .contact-label {
-            color: #a855f7;
-            font-size: 0.7rem;
-            font-weight: 500;
-            margin-bottom: 2px;
-        }
-
-        .contact-value {
-            color: #ccc;
-            font-size: 0.65rem;
-        }
-
-        /* Projeler Bölümü */
-        .projects-section {
-            background: rgba(255, 255, 255, 0.03);
-            padding: 30px;
-            border-radius: 15px;
-            border: 1px solid rgba(147, 51, 234, 0.3);
-        }
-
-        .projects-grid {
-            display: grid;
-            gap: 20px;
-        }
-
-        .project-card {
-            background: rgba(255, 255, 255, 0.02);
-            padding: 20px;
-            border-radius: 12px;
-            border-left: 4px solid #a855f7;
-            transition: all 0.3s ease;
-        }
-
-        .project-card:hover {
-            background: rgba(147, 51, 234, 0.05);
-            transform: translateX(5px);
-            border-left-color: #9333ea;
-            box-shadow: 0 5px 15px rgba(147, 51, 234, 0.1);
-        }
-
-        .project-title {
-            color: #a855f7;
-            font-size: 1.1rem;
-            margin-bottom: 8px;
-            font-weight: 500;
-            display: flex;
-            align-items: center;
-        }
-
-        .project-title::before {
-            content: '\F4BB';
-            font-family: 'bootstrap-icons';
-            margin-right: 8px;
-            color: #9333ea;
-            font-size: 0.9rem;
-        }
-
-        .project-description {
-            color: #ccc;
-            font-size: 0.9rem;
-            margin-bottom: 12px;
-            line-height: 1.5;
-        }
-
-        .project-tech {
-            display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-        }
-
-        .tech-tag {
-            background: rgba(147, 51, 234, 0.15);
-            color: #a855f7;
-            padding: 4px 10px;
-            border-radius: 15px;
-            font-size: 0.75rem;
-            border: 1px solid rgba(147, 51, 234, 0.3);
-            transition: all 0.3s ease;
-        }
-
-        .tech-tag:hover {
-            background: rgba(147, 51, 234, 0.25);
-            transform: scale(1.05);
-        }
-
-        /* Alt Bölüm */
-        .footer {
-            text-align: center;
-            padding: 30px 0;
-            border-top: 1px solid rgba(147, 51, 234, 0.3);
-            color: #666;
-            font-size: 0.9rem;
-            margin-top: 40px;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .container {
-                padding: 20px 15px;
-            }
-
-            .header {
-                grid-template-columns: 1fr;
-                gap: 25px;
-                padding: 30px 20px;
-                margin-bottom: 30px;
-            }
-
-            h1 {
-                font-size: 2.2rem;
-            }
-
-            .profile-img {
-                width: 100px;
-                height: 100px;
-            }
-
-            .contact-section {
-                padding: 20px;
-            }
-
-            .contact-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 10px;
-            }
-
-            .projects-section {
-                padding: 25px 20px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .contact-grid {
-                grid-template-columns: 1fr;
-                gap: 8px;
-            }
-        }
-
-        /* Hover efektleri */
-        .projects-section:hover {
-            border-color: rgba(147, 51, 234, 0.5);
-            box-shadow: 0 10px 30px rgba(147, 51, 234, 0.15);
-        }
-    </style>
 </head>
 
 <body>
     <div class="container">
         <!-- Header - Profil ve İletişim Birleşik -->
-        <header class="header">
+        <header class="header" role="banner">
             <!-- Sol taraf - Profil -->
             <div class="profile-section">
-                <div class="profile-img"></div>
+                <div class="profile-img" aria-label="Veli Filiz profil fotoğrafı"></div>
                 <h1>Veli Filiz</h1>
                 <p class="subtitle">Full Stack Developer</p>
                 <p class="skills">React.js • React Native • C# • .NET Core • SQL</p>
@@ -319,45 +141,55 @@
                 <h2 class="section-title">İletişim</h2>
                 <div class="contact-grid">
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="bi bi-envelope-fill"></i>
-                        </div>
-                        <div class="contact-label">E-posta</div>
-                        <div class="contact-value">veli.filiz@email.com</div>
+                        <a href="mailto:velifiliz@mail.com" class="contact-link" aria-label="E-posta gönder">
+                            <div class="contact-icon">
+                                <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+                            </div>
+                            <div class="contact-label">E-posta</div>
+                            <div class="contact-value">velifiliz@mail.com</div>
+                        </a>
                     </div>
 
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="bi bi-phone-fill"></i>
-                        </div>
-                        <div class="contact-label">Telefon</div>
-                        <div class="contact-value">+90 555 123 4567</div>
+                        <a href="tel:+905519430808" target="_blank" class="contact-link" aria-label="Telefon ara">
+                            <div class="contact-icon">
+                                <i class="bi bi-phone-fill" aria-hidden="true"></i>
+                            </div>
+                            <div class="contact-label">Telefon</div>
+                            <div class="contact-value">+90 555 123 4567</div>
+                        </a>
                     </div>
 
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="bi bi-linkedin"></i>
-                        </div>
-                        <div class="contact-label">LinkedIn</div>
-                        <div class="contact-value">linkedin.com/in/velifiliz</div>
+                        <a href="https://linkedin.com/in/velifiliz" target="_blank" class="contact-link"
+                            aria-label="LinkedIn profili">
+                            <div class="contact-icon">
+                                <i class="bi bi-linkedin" aria-hidden="true"></i>
+                            </div>
+                            <div class="contact-label">LinkedIn</div>
+                            <div class="contact-value">linkedin.com/in/velifiliz</div>
+                        </a>
                     </div>
 
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="bi bi-github"></i>
-                        </div>
-                        <div class="contact-label">GitHub</div>
-                        <div class="contact-value">github.com/velifiliz</div>
+                        <a href="https://github.com/velifiliz" target="_blank" class="contact-link"
+                            aria-label="GitHub profili">
+                            <div class="contact-icon">
+                                <i class="bi bi-github" aria-hidden="true"></i>
+                            </div>
+                            <div class="contact-label">GitHub</div>
+                            <div class="contact-value">github.com/velifiliz</div>
+                        </a>
                     </div>
                 </div>
             </div>
         </header>
 
         <!-- Hizmetler -->
-        <section class="projects-section">
+        <main class="projects-section" role="main">
             <h2 class="section-title">Hizmetler</h2>
             <div class="projects-grid">
-                <div class="project-card">
+                <article class="project-card">
                     <h3 class="project-title">Mobil Uygulama Geliştirme</h3>
                     <p class="project-description">
                         iOS ve Android platformları için native ve cross-platform mobil uygulamalar.
@@ -369,9 +201,9 @@
                         <span class="tech-tag">JavaScript</span>
                         <span class="tech-tag">TypeScript</span>
                     </div>
-                </div>
+                </article>
 
-                <div class="project-card">
+                <article class="project-card">
                     <h3 class="project-title">ERP & CRM Sistemleri</h3>
                     <p class="project-description">
                         İşletmeler için özelleştirilmiş ERP ve CRM çözümleri.
@@ -383,9 +215,9 @@
                         <span class="tech-tag">SQL Server</span>
                         <span class="tech-tag">Entity Framework</span>
                     </div>
-                </div>
+                </article>
 
-                <div class="project-card">
+                <article class="project-card">
                     <h3 class="project-title">Muhasebe Programları Entegrasyonu</h3>
                     <p class="project-description">
                         Logo, Netsis gibi muhasebe programlarına API entegrasyonu.
@@ -397,9 +229,9 @@
                         <span class="tech-tag">E-Fatura</span>
                         <span class="tech-tag">.NET Core</span>
                     </div>
-                </div>
+                </article>
 
-                <div class="project-card">
+                <article class="project-card">
                     <h3 class="project-title">Pazaryeri Entegrasyonu</h3>
                     <p class="project-description">
                         Trendyol, Hepsiburada, N11 gibi pazaryerlerine API entegrasyonu.
@@ -411,9 +243,9 @@
                         <span class="tech-tag">.NET Core</span>
                         <span class="tech-tag">Webhook</span>
                     </div>
-                </div>
+                </article>
 
-                <div class="project-card">
+                <article class="project-card">
                     <h3 class="project-title">E-Ticaret Çözümleri</h3>
                     <p class="project-description">
                         B2B ve B2C e-ticaret platformları. Ödeme sistemi entegrasyonu,
@@ -425,9 +257,9 @@
                         <span class="tech-tag">SQL Server</span>
                         <span class="tech-tag">Stripe</span>
                     </div>
-                </div>
+                </article>
 
-                <div class="project-card">
+                <article class="project-card">
                     <h3 class="project-title">Web Uygulama Geliştirme</h3>
                     <p class="project-description">
                         Modern web teknolojileri ile responsive ve performanslı web uygulamaları.
@@ -439,9 +271,9 @@
                         <span class="tech-tag">.NET Core</span>
                         <span class="tech-tag">Webhook</span>
                     </div>
-                </div>
+                </article>
 
-                <div class="project-card">
+                <article class="project-card">
                     <h3 class="project-title">Uçtan Uca API Entegrasyonu</h3>
                     <p class="project-description">
                         RESTful ve GraphQL API geliştirme, mikroservis mimarisi ve sistem entegrasyonu.
@@ -453,9 +285,9 @@
                         <span class="tech-tag">SQL Server</span>
                         <span class="tech-tag">JWT</span>
                     </div>
-                </div>
+                </article>
 
-                <div class="project-card">
+                <article class="project-card">
                     <h3 class="project-title">Sistem Entegrasyonu</h3>
                     <p class="project-description">
                         Farklı sistemler arası veri senkronizasyonu ve otomasyon.
@@ -467,15 +299,38 @@
                         <span class="tech-tag">SQL Server</span>
                         <span class="tech-tag">Webhook</span>
                     </div>
-                </div>
+                </article>
             </div>
-        </section>
+        </main>
 
         <!-- Footer -->
-        <footer class="footer">
+        <footer class="footer" role="contentinfo">
             <p>© 2024 Veli Filiz - Tüm hakları saklıdır</p>
         </footer>
     </div>
+
+    <!-- Google Analytics veya Google Tag Manager kodu buraya eklenebilir -->
+    <script>
+        // Sayfa yükleme performansını artırmak için lazy loading
+        document.addEventListener('DOMContentLoaded', function () {
+            // Resimler için lazy loading
+            const images = document.querySelectorAll('img');
+            if ('IntersectionObserver' in window) {
+                const imageObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const img = entry.target;
+                            img.src = img.dataset.src;
+                            img.classList.remove('lazy');
+                            imageObserver.unobserve(img);
+                        }
+                    });
+                });
+
+                images.forEach(img => imageObserver.observe(img));
+            }
+        });
+    </script>
 </body>
 
 </html>
