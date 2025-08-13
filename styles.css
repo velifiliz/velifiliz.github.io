@@ -117,6 +117,14 @@ h1 {
     color: #2563eb;
 }
 
+/* Hizmetler alt-başlık açıklaması */
+.section-subtitle {
+    color: #94a3b8;
+    margin-top: -6px;
+    margin-bottom: 18px;
+    font-size: 0.95rem;
+}
+
 .contact-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -380,4 +388,257 @@ h1 {
 
 .accordion-content li {
     margin: 6px 0;
+}
+
+/* ——— Uzay teması: renk ve arka plan iyileştirmeleri ——— */
+:root {
+    --space-bg: #070b1a;
+    --space-accent-1: #8b5cf6;
+    /* mor */
+    --space-accent-2: #3b82f6;
+    /* mavi */
+    --space-accent-3: #06b6d4;
+    /* camgöbeği */
+    --space-muted: #94a3b8;
+    /* soluk metin */
+}
+
+/* Arka plan: nebula + katmanlı yıldız alanı */
+body {
+    background:
+        radial-gradient(1200px 800px at 10% 5%, rgba(139, 92, 246, 0.14), transparent 60%),
+        radial-gradient(900px 600px at 90% 20%, rgba(59, 130, 246, 0.12), transparent 60%),
+        radial-gradient(800px 700px at 50% 120%, rgba(6, 182, 212, 0.10), transparent 60%),
+        var(--space-bg);
+    color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+}
+
+/* Yıldız katmanları (sabit, saydam, hafif animasyon) */
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    /* dağınık parlak noktalar */
+    background:
+        radial-gradient(2px 2px at 12% 20%, rgba(255, 255, 255, 0.8) 50%, transparent 51%),
+        radial-gradient(1.5px 1.5px at 28% 78%, rgba(255, 255, 255, 0.6) 50%, transparent 51%),
+        radial-gradient(1.5px 1.5px at 72% 38%, rgba(255, 255, 255, 0.7) 50%, transparent 51%),
+        radial-gradient(1px 1px at 86% 64%, rgba(255, 255, 255, 0.5) 50%, transparent 51%),
+        radial-gradient(1.5px 1.5px at 44% 14%, rgba(255, 255, 255, 0.7) 50%, transparent 51%),
+        radial-gradient(1px 1px at 7% 60%, rgba(255, 255, 255, 0.5) 50%, transparent 51%),
+        radial-gradient(1.5px 1.5px at 93% 8%, rgba(255, 255, 255, 0.6) 50%, transparent 51%),
+        radial-gradient(1px 1px at 60% 90%, rgba(255, 255, 255, 0.55) 50%, transparent 51%),
+        radial-gradient(1.5px 1.5px at 18% 42%, rgba(255, 255, 255, 0.65) 50%, transparent 51%),
+        radial-gradient(1px 1px at 37% 87%, rgba(255, 255, 255, 0.55) 50%, transparent 51%),
+        radial-gradient(1.5px 1.5px at 80% 82%, rgba(255, 255, 255, 0.65) 50%, transparent 51%),
+        radial-gradient(1px 1px at 50% 50%, rgba(255, 255, 255, 0.6) 50%, transparent 51%);
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    animation: space-drift 120s linear infinite;
+}
+
+/* ince yıldız tozu (tekrarlı minik noktalar, hafif parıltı) */
+body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background:
+        radial-gradient(1px 1px at 1px 1px, rgba(255, 255, 255, 0.20) 50%, transparent 51%) 0 0/52px 52px repeat,
+        radial-gradient(1px 1px at 1px 1px, rgba(255, 255, 255, 0.12) 50%, transparent 51%) 26px 26px/64px 64px repeat;
+    animation: twinkle 6s ease-in-out infinite alternate;
+    opacity: 0.6;
+}
+
+@keyframes space-drift {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes twinkle {
+    0% {
+        opacity: 0.35;
+    }
+
+    100% {
+        opacity: 0.75;
+    }
+}
+
+/* Başlıklara kozmik gradyan */
+h1,
+.section-title,
+.project-title {
+    background-image: linear-gradient(90deg, var(--space-accent-1), var(--space-accent-2), var(--space-accent-3));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Alt başlıklar daha okunur */
+.subtitle {
+    color: var(--space-muted);
+}
+
+/* Cam efekti ve kontur parıltısı */
+.header,
+.projects-section {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+    border: 1px solid rgba(99, 102, 241, 0.25);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(8, 15, 40, 0.45), 0 0 0 1px rgba(59, 130, 246, 0.12) inset;
+}
+
+/* Header çevresine zarif gradyan çerçeve */
+.header {
+    position: relative;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 1px;
+    background: linear-gradient(90deg, rgba(139, 92, 246, 0.55), rgba(59, 130, 246, 0.4), rgba(6, 182, 212, 0.45));
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+/* Proje ızgarası daha esnek kolona uyum sağlar */
+.projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    align-items: stretch;
+}
+
+/* Kart yüzeyi ve hover ışıması */
+.project-card {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.02));
+    border: 1px solid rgba(59, 130, 246, 0.15);
+    border-left: 4px solid var(--space-accent-2);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+}
+
+.project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.28), 0 0 18px rgba(59, 130, 246, 0.25);
+    border-left-color: var(--space-accent-1);
+}
+
+/* Kart altında kozmik çizgi */
+.project-card {
+    position: relative;
+}
+
+.project-card::after {
+    content: '';
+    display: block;
+    height: 2px;
+    margin-top: 14px;
+    background: linear-gradient(90deg, rgba(139, 92, 246, 0.45), rgba(59, 130, 246, 0.0));
+    border-radius: 2px;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.25s ease;
+}
+
+.project-card:hover::after {
+    transform: scaleX(1);
+}
+
+/* Etiketler: yumuşak parlama */
+.tech-tag {
+    background: linear-gradient(180deg, rgba(59, 130, 246, 0.18), rgba(139, 92, 246, 0.12));
+    color: #c7d2fe;
+    border: 1px solid rgba(59, 130, 246, 0.28);
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.14);
+}
+
+/* Profil görseline mor-mavi ışıma halkası */
+.profile-img {
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.18), 0 10px 28px rgba(139, 92, 246, 0.20);
+    position: relative;
+}
+
+.profile-img::after {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    border-radius: 50%;
+    padding: 3px;
+    background: linear-gradient(45deg, rgba(139, 92, 246, 0.75), rgba(59, 130, 246, 0.55), rgba(6, 182, 212, 0.6));
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0.75;
+    pointer-events: none;
+}
+
+/* Hizmet kartları: eşit yükseklik, daha iyi hiyerarşi */
+.project-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 240px;
+}
+
+.project-description {
+    flex-grow: 1;
+}
+
+.project-tech {
+    margin-top: auto;
+}
+
+/* Başlık ikonu için kozmik gradyan */
+.project-title::before {
+    background-image: linear-gradient(90deg, var(--space-accent-1), var(--space-accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* İletişim öğelerinde klavye odağı ve hover zenginleştirme */
+.contact-item:hover,
+.contact-item:focus-within {
+    border-color: rgba(139, 92, 246, 0.55);
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.2);
+}
+
+/* Akordeon geçişleri daha akıcı (görünürlük/yerleşim korunur) */
+.accordion-content {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0 18px;
+    transition: max-height 0.25s ease, opacity 0.25s ease, padding 0.2s ease;
+}
+
+.accordion-item.active .accordion-content {
+    opacity: 1;
+    max-height: 500px;
+    /* içerik uzunluğuna göre ayarlanabilir */
+    padding: 12px 18px 18px 18px;
+}
+
+/* Footer çizgisi ve ayrım */
+.footer {
+    border-top: 1px solid rgba(59, 130, 246, 0.25);
 }
