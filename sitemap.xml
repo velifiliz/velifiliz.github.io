@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://velifiliz.github.io/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://velifiliz.github.io/blog/lorem-ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://velifiliz.github.io/blog/net-ekosisteminde-otonom-donusum-ai-agent-ve-webhook-mimarisi-ile-gelecegi-insa-etmek</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://velifiliz.github.io/blog/dijital-donusumde-yeni-nesil-yaklasim-yapay-zeka-destekli-kurumsal-cozumlerle-gelecegi-bugunden</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://velifiliz.github.io/blog/dijital-donusumde-guvenilir-is-ortaginiz-upsoft-ile-yazilim-ve-teknoloji-cozumleri</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://velifiliz.github.io/blog/net-dependency-injection-icin-otomatik-bagimlilik-yonetimi-scoped-transient-ve-singleton</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
