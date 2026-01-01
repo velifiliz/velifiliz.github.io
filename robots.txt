@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://velifiliz.com/sitemap.xml
+Sitemap: https://velifiliz.github.io/sitemap.xml
